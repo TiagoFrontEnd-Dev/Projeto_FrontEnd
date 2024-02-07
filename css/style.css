@@ -3,7 +3,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Raleway, sans-serif;
+    font-family: 'Raleway', sans-serif;
 }
 
 /* STYLE SECTION GERAIS */
@@ -12,6 +12,7 @@
     max-width: 1100px;
     padding: 0 2%;
     margin: 0 auto;
+    flex-wrap: wrap;
 }
 
 section.main{
@@ -60,4 +61,99 @@ section.main{
     border:0;
     transform: scale(1.1);
     box-shadow: 0 0 25px #ffffff7c;     
+}
+
+/* STYLE CORPO SITE */
+.mockup{
+    display: block;
+    width: 100%;
+    color: #fff;
+    text-align: center;
+    padding-top: 100px;
+}
+
+.mockup h1{
+    font-size: 50px;
+}
+
+.mockup img{
+    max-width: 100%;
+}
+
+/* STYLE SECTION MARCAS */
+section.marcas{
+    padding: 100px 0;
+}
+
+section.marcas img{
+    width: calc(100% / 5);
+}
+
+/* STYLE SECTION POR QUE NÓS */
+section.porque_nos{
+    padding: 40px 0;
+    box-shadow: 0px 0px 50px #e0e7f7;
+    background-color: #FBFCFE;
+}
+
+section.porque_nos > .center > h2{
+    font-size: 64px;
+    text-align: center;
+    width: 100%;
+    color: #040404;
+}
+
+section.porque-nos > .center{
+    max-width: 1280px;
+}
+
+section.porque_nos > .center > p{
+    font-size: 14px;
+    text-align: center;
+    width: 100%;
+    color: #7E92AC;
+}
+
+.diferenciais{
+    display: flex;
+    margin: 50px;
+}
+
+.box_diferenciais{
+    box-shadow: 0px 20px 40px #2426721C;
+    width: 45%;
+    margin-right: 2%;
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+
+.box_diferenciais h3{
+    font-size: 28px;
+    color: #000000;
+    margin: 20px 0;
+}
+
+.box_diferenciais p {
+    font-size: 13px;
+    color: #7E92AC;
+    margin-bottom: 20px;
+}
+
+@media screen and (max-width: 768px){
+    .diferenciais{
+        flex-wrap: wrap;
+    }
+    .box_diferenciais{
+        width: 100%;
+        margin-right: 0;
+    }
+    section.marcas > .center{
+        flex-wrap: nowrap;
+        flex-direction: column;
+        align-items: center;
+    }
+    section.marcas img{
+        max-width: 300px;
+        width: 70%;
+    }
 }
