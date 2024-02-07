@@ -139,7 +139,104 @@ section.porque_nos > .center > p{
     margin-bottom: 20px;
 }
 
+/* STYLE SECTION CTA */
+section.cta{
+    background-image: url('/img/banner_meio.svg');
+    background-size: cover;
+    background-position: center;
+    padding: 20px 10px;  
+    min-height: 200px; 
+    color: #FFFFFF;
+    text-align: center;
+}
+
+section.cta h2,
+section.cta h4{
+    font-weight: normal;
+    margin: 10px 0;
+}
+
+section.cta h2{
+    font-size: 64px;
+}
+section.cta h4{
+    font-size: 20px;
+}
+
+section.cta a {
+    display: inline-block;
+    margin-top: 25px;
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-weight: bold;
+    font-size: 25px;
+    background: #FFDD33;
+    text-decoration: none;
+    color: #0F3FD3;
+}
+
+/* STYLE SECTION BENEFICIOS */
+section.beneficios{
+    padding:50px 0;
+}
+
+.lista_beneficios{
+    width: 40%;
+    margin-top: 30px;
+}
+
+.lista_beneficios h1{
+    color: #040404;
+    font-size: 40px;
+}
+
+.lista_beneficios p{
+    color: #7E92AC;
+    vertical-align: middle;
+    font-size: 14px;
+}
+
+.lista_beneficios span{
+    display: inline-block;
+    width: calc(100% - 70px);
+}
+
+.lista_beneficios a {
+    display: inline-block;
+    margin-top: 25px;
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-weight: bold;
+    font-size: 15px;
+    background: #255AFF;
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+.lista_beneficios img{
+    display: inline-block;
+    vertical-align: middle;
+    width: 70px;
+}
+
+.img_beneficios{
+    width: 50%;
+}
+
+.img_beneficios img{
+    max-width: 100%;
+}
+
+
+
+
+/* Responsive Mobile */
 @media screen and (max-width: 768px){
+
+    .lista_beneficios,.img_beneficios{
+        width:100%;
+        margin-bottom: 30px;
+    }
     .diferenciais{
         flex-wrap: wrap;
     }
