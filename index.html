@@ -92,5 +92,142 @@
             </div><!-- img_beneficios -->
         </div><!-- center -->
     </section><!-- beneficios -->
+
+    <section class="depoimentos">
+        <h1>Depoimentos</h1>
+        <div style="display: block;" class="center">
+            <br>
+            <div class="container_slider">
+
+                <div class="container_slider_single">
+                    <img src="/img/depoimento1.png" alt="">
+                    <h3>Miriam Souza</h3>
+                    <h5>Uber</h5>
+                    <p>O trabalho da Agência Bold foi fundamental para o nosso posicionamento e nossas estratégias de 2021. Juntos tivemos excelentes resultados e nossos clientes ficaram surpresos com a qualidade. Foi um trabalho incrível feito a muitas mãos pela Uber e pelo time da Agência Bold.</p>
+                    <div class="rating">
+                        <span class="star" data-rating="1">&#9733;</span>
+                        <span class="star" data-rating="2">&#9733;</span>
+                        <span class="star" data-rating="3">&#9733;</span>
+                        <span class="star" data-rating="4">&#9733;</span>
+                        <span class="star" data-rating="5">&#9733;</span>
+                    </div><!-- rating -->
+                </div><!-- container_slider_single -->
+                <div class="container_slider_single">
+                    <img src="/img/depoimento2.png" alt="">
+                    <h3>Lucas Mendes</h3>
+                    <h5>The North Face</h5>
+                    <p>Buscamos a Agência Bold para nos ajudar com campanhas de growth marketing focadas em um público extremamente específico. O produto teve faturamento maior que 300%.</p>
+                    <div class="rating">
+                        <span class="star" data-rating="1">&#9733;</span>
+                        <span class="star" data-rating="2">&#9733;</span>
+                        <span class="star" data-rating="3">&#9733;</span>
+                        <span class="star" data-rating="4">&#9733;</span>
+                        <span class="star" data-rating="5">&#9733;</span>
+                    </div><!-- rating -->
+                </div><!-- container_slider_single -->
+                <div class="container_slider_single">
+                    <img src="/img/depoimento3.png" alt="">
+                    <h3>Zaya Menphis</h3>
+                    <h5>Rappi</h5>
+                    <p>A estratégia de lançamento da marca não seria a mesma sem o trabalho comprometido da Agência Bold. Obrigado ao Vinícius, que abraçou nossos desafios como um de nós.</p>
+                    <div class="rating">
+                        <span class="star" data-rating="1">&#9733;</span>
+                        <span class="star" data-rating="2">&#9733;</span>
+                        <span class="star" data-rating="3">&#9733;</span>
+                        <span class="star" data-rating="4">&#9733;</span>
+                        <span class="star" data-rating="5">&#9733;</span>
+                    </div><!-- rating -->
+                </div><!-- container_slider_single -->
+                <div class="container_slider_single">
+                    <img src="/img/depoimento1.png" alt="">
+                    <h3>Miriam Souza</h3>
+                    <h5>Uber</h5>
+                    <p>O trabalho da Agência Bold foi fundamental para o nosso posicionamento e nossas estratégias de 2021. Juntos tivemos excelentes resultados e nossos clientes ficaram surpresos com a qualidade. Foi um trabalho incrível feito a muitas mãos pela Uber e pelo time da Agência Bold.</p>
+                    <div class="rating">
+                        <span class="star" data-rating="1">&#9733;</span>
+                        <span class="star" data-rating="2">&#9733;</span>
+                        <span class="star" data-rating="3">&#9733;</span>
+                        <span class="star" data-rating="4">&#9733;</span>
+                        <span class="star" data-rating="5">&#9733;</span>
+                    </div><!-- rating -->
+                </div><!-- container_slider_single -->
+                <div class="container_slider_single">
+                    <img src="/img/depoimento2.png" alt="">
+                    <h3>Lucas Mendes</h3>
+                    <h5>The North Face</h5>
+                    <p>Buscamos a Agência Bold para nos ajudar com campanhas de growth marketing focadas em um público extremamente específico. O produto teve faturamento maior que 300%.</p>
+                    <div class="rating">
+                        <span class="star" data-rating="1">&#9733;</span>
+                        <span class="star" data-rating="2">&#9733;</span>
+                        <span class="star" data-rating="3">&#9733;</span>
+                        <span class="star" data-rating="4">&#9733;</span>
+                        <span class="star" data-rating="5">&#9733;</span>
+                    </div><!-- rating -->
+                </div><!-- container_slider_single -->
+                <div class="container_slider_single">
+                    <img src="/img/depoimento3.png" alt="">
+                    <h3>Zaya Menphis</h3>
+                    <h5>Rappi</h5>
+                    <p>A estratégia de lançamento da marca não seria a mesma sem o trabalho comprometido da Agência Bold. Obrigado ao Vinícius, que abraçou nossos desafios como um de nós.</p>
+                    <div class="rating">
+                        <span class="star" data-rating="1">&#9733;</span>
+                        <span class="star" data-rating="2">&#9733;</span>
+                        <span class="star" data-rating="3">&#9733;</span>
+                        <span class="star" data-rating="4">&#9733;</span>
+                        <span class="star" data-rating="5">&#9733;</span>
+                    </div><!-- rating -->
+                </div><!-- container_slider_single -->
+            </div><!-- container_slider -->
+        </div><!-- center -->
+    </section><!-- Depoimentos -->
+
+
+    <script src="/js/jquery.js"></script>
+    <script src="/js/slick.min.js"></script>
+    <script>
+        // Primeiro script existente
+        $('.container_slider').slick({
+            dots: true,
+            Arrows: false,
+            speed: 1000,
+            slidesToShow: 3,
+            slidesToScroll: 3,
+            autoplay: true,
+            autoplaySpedd: 3000,
+            pauseOnHover: false,
+            responsive: [
+                {
+                    breakpoint: 768,
+                    sttings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1,
+                    }
+                }
+            ]
+        });
+    
+        // script para o marcador de estrelas
+        document.addEventListener('DOMContentLoaded', function() {
+            const stars = document.querySelectorAll('.star');
+    
+            stars.forEach(function(star) {
+                star.addEventListener('click', function() {
+                    const rating = parseInt(star.getAttribute('data-rating'));
+                    removeActiveStars();
+                    for (let i = 0; i < rating; i++) {
+                        stars[i].classList.add('active');
+                    }
+                });
+            });
+    
+            function removeActiveStars() {
+                stars.forEach(function(star) {
+                    star.classList.remove('active');
+                });
+            }
+        });
+    </script>
+    
+
 </body>
 </html>
